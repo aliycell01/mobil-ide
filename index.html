@@ -22,67 +22,180 @@
 </style>
 </head>
 <body>
+
 <h1>PlcDroid — Gizlilik Politikası</h1>
-<p class="meta">Yürürlük Tarihi: 26.09.2026 &nbsp;·&nbsp; Sürüm: 1.0 &nbsp;·&nbsp; Uygulama: PlcDroid</p>
+<p class="meta">Yürürlük Tarihi: 16.10.2026 &nbsp;·&nbsp; Sürüm: 2.0 &nbsp;·&nbsp; Uygulama: PlcDroid</p>
+
 <div class="highlight">
-<strong>Kısa Özet:</strong> PlcDroid, hiçbir kişisel verinizi toplamaz, uzak bir sunucuya göndermez ve üçüncü kişilerle paylaşmaz. Uygulama internet bağlantısı kullanmaz; tüm işlemler cihazınızda yerel olarak ve USB kablosu üzerinden doğrudan bağlı olduğunuz PLC cihazıyla gerçekleşir. Bu belge, bu durumu ve ilgili tüm ayrıntıları hukuken gerekli detay düzeyinde açıklamaktadır.
+<strong>Kısa Özet:</strong> PlcDroid, PLC programlama amacıyla geliştirilmiş teknik bir araçtır. Ladder diyagramı oluşturma, USB üzerinden PLC ile haberleşme ve program yükleme/indirme işlemleri cihazınızda yerel olarak gerçekleşir. Bunun yanında lisans doğrulama, ücretsiz deneme hakkı yönetimi ve uygulama içi satın alma işlemleri için sınırlı kişisel veri (Google hesabı bilgisi ve cihaz tanımlayıcısı) toplanır ve güvenli sunucularımızda işlenir. Bu belge, hangi verilerin neden toplandığını, nasıl kullanıldığını ve haklarınızı detaylı olarak açıklar.
 </div>
+
 <h2>1. Giriş</h2>
-<p>Bu Gizlilik Politikası özel bir firma tarafından geliştirilen "PlcDroid" mobil uygulamasının kullanıcılarına ait hangi verilerin işlendiğini, işlenip işlenmediğini, nasıl saklandığını ve haklarınızın neler olduğunu açıklar. Uygulamayı indirerek ve kullanarak bu Politikayı kabul etmiş olursunuz. Bu Politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK"), Avrupa Birliği Genel Veri Koruma Tüzüğü ("GDPR") ve Google Play Geliştirici Dağıtım Sözleşmesi'nin Kullanıcı Verileri politikasına uygun olarak hazırlanmıştır.</p>
+<p>Bu Gizlilik Politikası, "PlcDroid" mobil uygulamasının ("Uygulama") geliştiricisi tarafından kullanıcılarına ait hangi verilerin işlendiğini, hangi amaçlarla kullanıldığını, nasıl saklandığını, kimlerle paylaşıldığını ve haklarınızın neler olduğunu açıklar. Uygulamayı indirerek, kurarak veya kullanarak bu Politikayı kabul etmiş olursunuz.</p>
+<p>Bu Politika; 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK"), Avrupa Birliği Genel Veri Koruma Tüzüğü ("GDPR") ve Google Play Geliştirici Dağıtım Sözleşmesi'nin Kullanıcı Verileri politikasına uygun olarak hazırlanmıştır.</p>
+
 <h2>2. Uygulamanın Ne Yaptığı (Bağlam)</h2>
-<p>PlcDroid, Programlanabilir Lojik Kontrolörler (PLC) ile Android cihazınızın USB-OTG portu üzerinden <strong>doğrudan ve yerel olarak</strong> haberleşmenizi sağlayan teknik/endüstriyel bir programlama aracıdır. Ladder diyagramı çizme, komut listesi (IL) oluşturma, programı PLC'ye yükleme/PLC'den çekme, giriş-çıkış izleme gibi işlevler; hiçbir bulut sunucusuna, üçüncü taraf API'sine veya internete bağlanmadan, tamamen cihazınız ile fiziksel olarak bağlı PLC arasında gerçekleşir.</p>
+<p>PlcDroid, Programlanabilir Lojik Kontrolörler (PLC) ile Android cihazınızın USB-OTG portu üzerinden haberleşmenizi sağlayan teknik/endüstriyel bir programlama aracıdır. Ladder diyagramı çizme, komut listesi (IL) oluşturma, programı PLC'ye yükleme/PLC'den çekme, giriş-çıkış izleme ve bit zorlama gibi işlevler, cihazınız ile fiziksel olarak bağlı PLC arasında gerçekleşir.</p>
+<p>Lisans kontrolü, ücretsiz deneme hakkı yönetimi ve abonelik/satın alma işlemleri ise internet bağlantısı gerektirir ve bu kapsamda sınırlı veri işlenir.</p>
+
 <h2>3. Topladığımız Veriler</h2>
-<p><strong>Geliştirici olarak biz, Uygulama aracılığıyla hiçbir kişisel veri toplamıyoruz, işlemiyoruz veya sunucularımıza aktarmıyoruz.</strong> Bunun teknik nedeni basittir: Uygulama internete bağlanmak için hiçbir kod içermez ve Google Play'de yayınlanan sürümde <code>INTERNET</code> izni talep etmez/kullanmaz. Aşağıdaki tabloda yaygın veri kategorileri ve bu Uygulama açısından durumları özetlenmiştir:</p>
+<p>Aşağıdaki tabloda Uygulama tarafından işlenen veri kategorileri özetlenmiştir:</p>
+
 <table>
-<tr><th>Veri Kategorisi</th><th>Toplanıyor mu?</th><th>Açıklama</th></tr>
-<tr><td>Ad, e-posta, telefon numarası</td><td>Hayır</td><td>Uygulamada hesap oluşturma, giriş yapma veya iletişim formu bulunmamaktadır.</td></tr>
-<tr><td>Konum verisi</td><td>Hayır</td><td>Uygulama konum izni talep etmez ve konum verisi kullanmaz.</td></tr>
-<tr><td>Kimlik/cihaz tanımlayıcıları (Advertising ID, IMEI vb.)</td><td>Hayır</td><td>Reklam veya analitik SDK'sı entegre edilmemiştir.</td></tr>
-<tr><td>Kullanım/analitik verisi (tıklama, oturum süresi vb.)</td><td>Hayır</td><td>Firebase Analytics, Crashlytics veya benzeri hiçbir izleme aracı kullanılmamaktadır.</td></tr>
-<tr><td>Fotoğraf, mikrofon, kamera</td><td>Hayır</td><td>Bu izinler istenmez.</td></tr>
-<tr><td>Finansal/ödeme bilgisi</td><td>Hayır</td><td>Uygulama içi satın alma veya ödeme işlevi yoktur.</td></tr>
-<tr><td>PLC programı (ladder/IL kodu) ve haberleşme ayarları</td><td>Evet — ama yalnızca cihazınızda</td><td>Bkz. Madde 4. Bu veri sizin tarafınızdan oluşturulur, yalnızca cihazınızda saklanır, bize hiçbir şekilde ulaşmaz.</td></tr>
+<tr>
+  <th>Veri Kategorisi</th>
+  <th>Toplanıyor mu?</th>
+  <th>Açıklama</th>
+</tr>
+<tr>
+  <td>Google hesap bilgisi (e-posta, kullanıcı kimliği)</td>
+  <td><strong>Evet</strong></td>
+  <td>Google ile giriş yapıldığında Firebase Authentication aracılığıyla alınır. Lisans ve deneme hakkı yönetimi için kullanılır.</td>
+</tr>
+<tr>
+  <td>Cihaz tanımlayıcısı (ANDROID_ID)</td>
+  <td><strong>Evet</strong></td>
+  <td>Ücretsiz deneme hakkının kötüye kullanılmasını engellemek ve tek cihaz kısıtlamasını uygulamak amacıyla toplanır.</td>
+</tr>
+<tr>
+  <td>Lisans ve abonelik durumu</td>
+  <td><strong>Evet</strong></td>
+  <td>Satın alma durumu, deneme hakkı kullanımı ve lisans geçerlilik bilgileri sunucuda ve cihazda tutulur.</td>
+</tr>
+<tr>
+  <td>Uygulama içi satın alma bilgisi</td>
+  <td><strong>Evet</strong></td>
+  <td>Google Play Billing üzerinden yapılan satın almalar Google tarafından işlenir; satın alma sonucu lisans sunucumuza iletilir.</td>
+</tr>
+<tr>
+  <td>Konum verisi</td>
+  <td>Hayır</td>
+  <td>Uygulama konum izni talep etmez ve konum verisi kullanmaz.</td>
+</tr>
+<tr>
+  <td>Reklam kimliği (Advertising ID)</td>
+  <td>Hayır</td>
+  <td>Reklam veya analitik amaçlı Advertising ID kullanılmaz.</td>
+</tr>
+<tr>
+  <td>Kullanım/analitik verisi (tıklama, oturum süresi vb.)</td>
+  <td>Hayır</td>
+  <td>Firebase Analytics, Crashlytics veya benzeri davranışsal izleme araçları kullanılmamaktadır.</td>
+</tr>
+<tr>
+  <td>Fotoğraf, mikrofon, kamera</td>
+  <td>Hayır</td>
+  <td>Bu izinler istenmez.</td>
+</tr>
+<tr>
+  <td>PLC programı (ladder/IL kodu) ve haberleşme ayarları</td>
+  <td>Evet — yalnızca cihazınızda</td>
+  <td>Bu veriler sizin tarafınızdan oluşturulur, yalnızca cihazınızda saklanır ve sunucularımıza gönderilmez.</td>
+</tr>
 </table>
-<h2>4. Cihazınızda Yerel Olarak Saklanan Veriler</h2>
-<p>Uygulama, işlevlerini yerine getirebilmek için aşağıdaki verileri <strong>yalnızca kendi cihazınızın dahili depolama alanında</strong> saklar. Bu veriler hiçbir zaman cihazınızın dışına, herhangi bir sunucuya veya üçüncü bir tarafa gönderilmez:</p>
+
+<div class="warn">
+<strong>Önemli:</strong> PLC programlarınız, Ladder diyagramlarınız ve haberleşme ayarlarınız <strong>asla</strong> sunucularımıza gönderilmez. Bu veriler yalnızca cihazınızda kalır.
+</div>
+
+<h2>4. Verilerin İşlenme Amaçları</h2>
 <ul>
-<li><strong>Kaydedilen PLC programları:</strong> Ladder editöründe oluşturduğunuz veya PLC'den çektiğiniz programlar, uygulamaya özel bir klasörde (uygulamanın kendi harici depolama alt dizininde) JSON formatında dosya olarak saklanır.</li>
-<li><strong>Haberleşme ayarları:</strong> Baud rate, istasyon adresi, veri/durdurma biti, parite ve zaman aşımı gibi tercihleriniz cihazınızda küçük bir yapılandırma dosyasında tutulur.</li>
-<li><strong>Sözleşme onay kaydı:</strong> Kullanıcı Sözleşmesi'ni kabul ettiğinize dair kayıt (onay tarihi ve sürüm numarası) cihazınızda yerel olarak (SharedPreferences) tutulur; bu sayede uygulama her açılışında sözleşmeyi tekrar göstermez.</li>
+  <li><strong>Kimlik doğrulama:</strong> Google hesabı ile güvenli giriş sağlamak.</li>
+  <li><strong>Lisans ve deneme yönetimi:</strong> Ücretsiz deneme hakkının tek seferlik kullanılmasını sağlamak, abonelik/satın alma durumunu doğrulamak ve tek cihaz kısıtlamasını uygulamak.</li>
+  <li><strong>Kötüye kullanım önleme:</strong> Aynı cihaz veya hesap üzerinden deneme hakkının defalarca kullanılmasını engellemek.</li>
+  <li><strong>Hizmet sunumu:</strong> Satın alınan veya deneme kapsamındaki özelliklerin (PLC'ye yükleme/indirme vb.) erişimini kontrol etmek.</li>
+  <li><strong>Yasal yükümlülükler:</strong> Gerekli hallerde yasal taleplere cevap verebilmek.</li>
 </ul>
-<p>Bu veriler, Android işletim sisteminin "Uygulama Verilerini Temizle" veya uygulamayı kaldırma (kurulumu kaldırma) işlemleriyle kalıcı olarak silinir. Bu verilerin yedeklenmesi ve güvenliği tamamen sizin kontrolünüzdedir.</p>
-<h2>5. İstenen İzinler ve Gerekçeleri</h2>
+
+<h2>5. Cihazınızda Yerel Olarak Saklanan Veriler</h2>
+<p>Aşağıdaki veriler yalnızca cihazınızın dahili depolama alanında tutulur ve sunucularımıza gönderilmez:</p>
+<ul>
+  <li><strong>Kaydedilen PLC programları:</strong> Ladder editöründe oluşturduğunuz veya PLC'den çektiğiniz programlar, uygulamaya özel bir klasörde saklanır.</li>
+  <li><strong>Haberleşme ayarları:</strong> Baud rate, istasyon adresi, veri/durdurma biti, parite ve zaman aşımı gibi tercihler.</li>
+  <li><strong>Sözleşme onay kaydı:</strong> Kullanıcı Sözleşmesi'ni kabul ettiğinize dair kayıt (onay tarihi ve sürüm numarası).</li>
+  <li><strong>Lisans token'ı:</strong> Sunucudan alınan imzalı lisans belgesi, güvenli depolama alanında (EncryptedSharedPreferences / Secure Storage) tutulur.</li>
+</ul>
+<p>Bu veriler, Android işletim sisteminin "Uygulama Verilerini Temizle" veya uygulamayı kaldırma işlemleriyle kalıcı olarak silinir.</p>
+
+<h2>6. İstenen İzinler ve Gerekçeleri</h2>
 <table>
 <tr><th>İzin</th><th>Neden gerekli?</th></tr>
-<tr><td>USB Cihaz Erişimi (USB Host / OTG)</td><td>PLC cihazıyla USB-Seri (Modbus ASCII) haberleşmesi kurabilmek için zorunludur. Bu izin olmadan uygulamanın temel işlevi çalışmaz. Bu kanal üzerinden yalnızca sizin bağladığınız PLC ile veri alışverişi yapılır; başka hiçbir cihaza veya sunucuya veri gönderilmez.</td></tr>
-<tr><td>Dosya/Depolama Erişimi (uygulamaya özel dizin)</td><td>Oluşturduğunuz programları ve ayarları cihazınızda kaydedip tekrar açabilmeniz için kullanılır. Android'in modern sürümlerinde bu, uygulamaya özel bir alanla sınırlıdır ve cihazınızdaki diğer dosyalara genel erişim içermez.</td></tr>
+<tr>
+  <td>USB Cihaz Erişimi (USB Host / OTG)</td>
+  <td>PLC cihazıyla USB-Seri (Modbus ASCII) haberleşmesi kurabilmek için zorunludur. Bu kanal üzerinden yalnızca sizin bağladığınız PLC ile veri alışverişi yapılır.</td>
+</tr>
+<tr>
+  <td>İnternet Erişimi</td>
+  <td>Lisans doğrulama, Google ile giriş, deneme hakkı tüketimi ve uygulama içi satın alma işlemlerinin gerçekleştirilmesi için gereklidir.</td>
+</tr>
+<tr>
+  <td>Dosya/Depolama Erişimi (uygulamaya özel dizin)</td>
+  <td>Oluşturduğunuz programları ve ayarları cihazınızda kaydedip tekrar açabilmeniz için kullanılır. Android'in modern sürümlerinde uygulamaya özel alanla sınırlıdır.</td>
+</tr>
 </table>
-<h2>6. Üçüncü Taraflarla Veri Paylaşımı</h2>
-<p>Geliştirici, hiçbir veriyi reklam ağları, analitik sağlayıcıları, veri komisyoncuları veya başka herhangi bir üçüncü tarafla paylaşmaz, satmaz veya kiralamaz — çünkü toplanan/işlenen böyle bir veri bulunmamaktadır. Uygulama içerisinde üçüncü taraf reklam gösterimi (AdMob vb.) veya üçüncü taraf SDK entegrasyonu (Firebase, Crashlytics, analitik kütüphaneleri vb.) yoktur.</p>
-<h2>7. Çerezler ve İzleme Teknolojileri</h2>
-<p>Uygulama bir çevrimiçi web hizmeti olmadığından çerez (cookie) kullanmaz. Reklam kimliği (Advertising ID), parmak izi (fingerprinting) veya benzeri bir cihaz/kullanıcı izleme mekanizması içermez.</p>
-<h2>8. Verilerin Yurt Dışına Aktarımı</h2>
-<p>Toplanan/işlenen bir kişisel veri bulunmadığından yurt içi veya yurt dışına herhangi bir veri aktarımı söz konusu değildir.</p>
-<h2>9. Çocukların Gizliliği</h2>
-<p>Uygulama, endüstriyel otomasyon/PLC programlama alanında teknik bilgi gerektiren profesyonel bir araç olup 13 yaşın (AB/ABD için COPPA kapsamında) veya ilgili yerel mevzuatın belirlediği yaşın altındaki çocuklara yönelik olarak tasarlanmamıştır ve onlardan bilerek herhangi bir veri toplanmamaktadır. Bir ebeveyn veya vasi, reşit olmayan bir çocuğun bu Uygulamayı kullandığını ve kişisel veri paylaştığını düşünüyorsa, Madde 13'teki iletişim bilgilerinden bizimle iletişime geçebilir; böyle bir durum tespit edilirse ilgili yerel veriler (varsa) derhal silinir.</p>
-<h2>10. Veri Güvenliği</h2>
-<p>Cihazınızda yerel olarak saklanan program ve ayar dosyaları, Android işletim sisteminin uygulama düzeyinde sağladığı korumadan (her uygulamanın kendi verilerine izole erişimi) yararlanır. Uygulama, verilerinizi şifrelenmiş biçimde saklamaz; bu nedenle cihazınızın kendisinin (ekran kilidi, cihaz şifreleme vb.) güvenliğini sağlamak sizin sorumluluğunuzdadır. USB üzerinden PLC ile yapılan haberleşme, PLC'lerin kendi Modbus ASCII protokolü üzerinden gerçekleşir; bu kanal, fiziksel olarak bağlı iki cihaz arasında olduğundan internet üzerinden dinlenme riski taşımaz.</p>
-<h2>11. Verilerin Saklanma Süresi ve Silinmesi</h2>
-<p>Kaydettiğiniz programlar ve ayarlar, siz silene, uygulama verilerini temizleyene veya uygulamayı kaldırana kadar cihazınızda saklanır. Geliştirici olarak bizim elimizde herhangi bir kullanıcı verisi bulunmadığından, "verilerimin silinmesini istiyorum" talebiyle bize başvurmanıza gerek yoktur — verileriniz zaten yalnızca sizin cihazınızdadır ve silme işlemini doğrudan cihazınızdan (Ayarlar → Uygulamalar → PlcDroid → Depolamayı/Verileri Temizle veya uygulamayı kaldırma) yapabilirsiniz.</p>
-<h2>12. KVKK ve GDPR Kapsamındaki Haklarınız</h2>
-<p>KVKK md. 11 ve GDPR md. 15-22 kapsamında kullanıcıların; verilerinin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme, düzeltme, silme, itiraz etme gibi hakları bulunmaktadır. Bu Uygulama özelinde, Geliştirici tarafında işlenen herhangi bir kişisel veri bulunmadığı için bu haklar fiilen uygulanacak bir veri işleme faaliyeti içermemektedir. Yine de sorularınız için Madde 13'teki iletişim kanalından bize ulaşabilirsiniz; makul süre içinde (KVKK kapsamında en geç 30 gün içinde) yanıt veririz.</p>
-<h2>13. Sorumluluk Sınırı ve İlgili Belgeler</h2>
-<p>Bu Gizlilik Politikası yalnızca veri işleme uygulamalarımızı açıklar. Uygulamanın kullanımından doğan teknik, operasyonel ve endüstriyel sorumluluklar (PLC/makine güvenliği, veri kaybı, haberleşme riskleri vb.) ayrı bir belge olan <strong>Kullanıcı Sözleşmesi (EULA)</strong>'nde düzenlenmiştir; Uygulama ilk açılışta bu sözleşmeyi onayınıza sunar.</p>
-<h2>14. Politika Değişiklikleri</h2>
-<p>Bu Politika zaman zaman güncellenebilir. Önemli değişiklikler yapıldığında bu sayfanın üst kısmındaki "Yürürlük Tarihi" güncellenecektir. Uygulamayı güncellemeler sonrasında kullanmaya devam etmeniz, güncel Politikayı kabul ettiğiniz anlamına gelir.</p>
-<h2>15. İletişim</h2>
-<p>Bu Gizlilik Politikası hakkında soru, talep veya şikayetleriniz için:</p>
+
+<h2>7. Üçüncü Taraflarla Veri Paylaşımı</h2>
+<p>Verileriniz yalnızca aşağıdaki hizmet sağlayıcılarla, belirtilen amaçlarla paylaşılır:</p>
 <ul>
-<li>Geliştirici şirket: <strong>[Pocket Automation]</strong></li>
-<li>E-posta: <strong>[PlcDroid@gmail.com]</strong></li>
-<li>Konum: <strong>[İstanbul / Türkiye]</strong></li>
+  <li><strong>Google Firebase (Authentication & Cloud Functions):</strong> Kullanıcı kimlik doğrulama ve lisans sunucu işlemleri için. Veriler Google altyapısında (Avrupa bölgesi – europe-west1) işlenir.</li>
+  <li><strong>Google Play Billing:</strong> Uygulama içi satın alma işlemlerinin gerçekleştirilmesi ve doğrulanması için.</li>
+  <li><strong>Google Sign-In:</strong> Hesap girişi için.</li>
 </ul>
+<p>Geliştirici, verilerinizi reklam ağları, analitik sağlayıcıları, veri komisyoncuları veya başka üçüncü taraflarla satmaz, kiralamaz veya pazarlama amacıyla paylaşmaz. Uygulama içerisinde reklam gösterimi (AdMob vb.) veya davranışsal analitik SDK'sı bulunmamaktadır.</p>
+
+<h2>8. Verilerin Yurt Dışına Aktarımı</h2>
+<p>Lisans ve kimlik doğrulama işlemleri için kullanılan Firebase hizmetleri Google tarafından işletilmektedir. Veriler, Google'ın Avrupa bölgesindeki (europe-west1) sunucularında işlenir. Bu aktarım, KVKK ve GDPR kapsamında uygun teknik ve idari tedbirler alınarak gerçekleştirilir. Google'ın ilgili veri işleme taahhütleri geçerlidir.</p>
+
+<h2>9. Çocukların Gizliliği</h2>
+<p>Uygulama, endüstriyel otomasyon/PLC programlama alanında teknik bilgi gerektiren profesyonel bir araçtır. 13 yaşın (veya ilgili yerel mevzuatın belirlediği yaşın) altındaki çocuklara yönelik olarak tasarlanmamıştır ve onlardan bilerek herhangi bir veri toplanmamaktadır. Bir ebeveyn veya vasi, reşit olmayan bir çocuğun bu Uygulamayı kullandığını düşünüyorsa, Madde 15'teki iletişim bilgilerinden bizimle iletişime geçebilir.</p>
+
+<h2>10. Veri Güvenliği</h2>
+<ul>
+  <li>Lisans token'ları cihazda güvenli depolama (encrypted storage) kullanılarak saklanır.</li>
+  <li>Sunucu iletişimi HTTPS üzerinden yapılır.</li>
+  <li>Lisans belgeleri sunucu tarafında üretilen RSA imzası ile doğrulanır; istemci yalnızca doğrulama yapabilir, yeni imza üretemez.</li>
+  <li>PLC programları ve ayarlar yalnızca cihazınızda tutulur; bu verilerin yedeklenmesi ve cihaz güvenliği sizin sorumluluğunuzdadır.</li>
+  <li>USB üzerinden PLC ile yapılan haberleşme, fiziksel olarak bağlı iki cihaz arasında gerçekleşir ve internet üzerinden dinlenme riski taşımaz.</li>
+</ul>
+
+<h2>11. Verilerin Saklanma Süresi ve Silinmesi</h2>
+<ul>
+  <li><strong>Cihazdaki yerel veriler</strong> (programlar, ayarlar, sözleşme onayı): Siz silene, uygulama verilerini temizleyene veya uygulamayı kaldırana kadar saklanır.</li>
+  <li><strong>Lisans ve hesap verileri</strong> (Google kimliği, cihaz tanımlayıcısı, deneme/abonelik durumu): Hesabınız aktif olduğu ve yasal saklama yükümlülükleri devam ettiği sürece tutulur. Hesabınızı silmek veya verilerinizin silinmesini talep etmek için Madde 15'teki iletişim kanalını kullanabilirsiniz. Talebiniz makul süre içinde (KVKK kapsamında en geç 30 gün) sonuçlandırılır.</li>
+</ul>
+
+<h2>12. KVKK ve GDPR Kapsamındaki Haklarınız</h2>
+<p>KVKK md. 11 ve GDPR md. 15-22 kapsamında aşağıdaki haklara sahipsiniz:</p>
+<ul>
+  <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+  <li>İşlenmişse buna ilişkin bilgi talep etme</li>
+  <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+  <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
+  <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
+  <li>Silinmesini veya yok edilmesini isteme</li>
+  <li>Aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
+  <li>Münhasıran otomatik sistemler ile analiz edilmesi nedeniyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
+  <li>Kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
+</ul>
+<p>Bu haklarınızı kullanmak için Madde 15'teki iletişim bilgilerinden bize ulaşabilirsiniz. Talebiniz en geç 30 gün içinde sonuçlandırılır.</p>
+
+<h2>13. Sorumluluk Sınırı ve İlgili Belgeler</h2>
+<p>Bu Gizlilik Politikası yalnızca veri işleme uygulamalarımızı açıklar. Uygulamanın kullanımından doğan teknik, operasyonel ve endüstriyel sorumluluklar (PLC/makine güvenliği, veri kaybı, haberleşme riskleri vb.) ayrı bir belge olan <strong>Kullanıcı Sözleşmesi (EULA)</strong>'nde düzenlenmiştir. Uygulama ilk açılışta bu sözleşmeyi onayınıza sunar.</p>
+
+<h2>14. Politika Değişiklikleri</h2>
+<p>Bu Politika zaman zaman güncellenebilir. Önemli değişiklikler yapıldığında bu sayfanın üst kısmındaki "Yürürlük Tarihi" ve sürüm numarası güncellenir. Uygulamayı güncellemeler sonrasında kullanmaya devam etmeniz, güncel Politikayı kabul ettiğiniz anlamına gelir. Önemli değişikliklerde uygulama içinde bilgilendirme yapılabilir.</p>
+
+<h2>15. İletişim</h2>
+<p>Bu Gizlilik Politikası hakkında soru, talep, şikayet veya KVKK/GDPR kapsamındaki haklarınızı kullanmak için:</p>
+<ul>
+  <li>Geliştirici: <strong>Pocket Automation</strong></li>
+  <li>E-posta: <strong>PlcDroid@gmail.com</strong></li>
+  <li>Konum: <strong>İstanbul / Türkiye</strong></li>
+</ul>
+
 <footer>
+  <p>© 2026 Pocket Automation · PlcDroid Gizlilik Politikası · Sürüm 2.0</p>
 </footer>
+
 </body>
 </html>
